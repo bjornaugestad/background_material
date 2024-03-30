@@ -1,0 +1,31 @@
+{
+  "title": "20111125_124926.jpg",
+  "description": "20111125_124926.jpg",
+  "imageViews": "0",
+  "creationTime": {
+    "timestamp": "1322222360",
+    "formatted": "Nov 25, 2011, 11:59:20 AM UTC"
+  },
+  "modificationTime": {
+    "timestamp": "1578215909",
+    "formatted": "Jan 5, 2020, 9:18:29 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "geoDataExif": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "photoTakenTime": {
+    "timestamp": "1322221766",
+    "formatted": "Nov 25, 2011, 11:49:26 AM UTC"
+  }
+}

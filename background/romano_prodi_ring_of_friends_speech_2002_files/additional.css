@@ -1,0 +1,70 @@
+.Title {
+	margin-top:12.0pt;
+    margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-align:center;
+	font-size:16.0pt;
+	font-family:Arial;
+	font-weight:bold;
+}
+
+.A_Standard_Title {
+	margin-top:20px;
+    margin-right:0cm;
+	margin-bottom:20px;
+	margin-left:0cm;
+	text-align:center;
+	font-size:20px;
+	font-family:Arial;
+	font-weight:bold;
+}
+
+.A_Standard__33__20_Titre {
+	margin-top:12.0pt;
+    margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-align:center;
+	font-size:16.0pt;
+	font-family:Arial;
+	font-weight:bold;
+}
+
+.notStandardImageDiv {
+	border: solid 1px #000000;
+	font-weight:bold;
+}
+
+div.transformed-text {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;	
+}
+
+.pressReleaseContentMain table {
+	border-spacing: 0px;
+	border-collapse: collapse;
+	/*
+	border:solid 1px #000000;
+	border-width: 1px;
+	*/
+}
+
+.pressReleaseContentMain td {
+	border-collapse: collapse;
+	padding: 3px;
+	/*
+	border-style: solid;
+	border:solid 1px #000000;
+	border-width: 1px;
+	*/
+}
+
+#rapidClean {
+	border:none;
+}
+
+#rapidClean td {
+	border:none;
+}

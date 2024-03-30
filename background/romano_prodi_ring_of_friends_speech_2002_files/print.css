@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+#services,
+#logo,
+#language_selector_box,
+#path,
+#banner-background,
+#footer,
+#menu,
+.banner-title-img{
+	display:none;}
+#header,
+#banner{
+	background-color:transparent;}
+
+#euContent{
+	width:100%;
+	margin:0;}
+	
+#euLayout{
+	border-left:none;
+	border-right:none;}
+
+#banner-title-text{
+	position:relative;
+	top:0;
+	left:0;
+	color:#000;
+	text-indent:0;
+	overflow: auto;
+}

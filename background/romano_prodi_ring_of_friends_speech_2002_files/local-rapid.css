@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+#euLayout {
+border-left:2px solid #003399;
+border-right:2px solid #003399;
+margin:0 auto;
+max-width:984px;
+min-width:984px;
+text-align:left;
+width:auto !important;
+}
+
+/********************Banner*****************/
+.banner-title-img {
+background-repeat:no-repeat;
+height:30px;
+left:160px;
+position:absolute;
+top:35px;
+width:500px;
+z-index:10;}
+
+#banner-title-img-en {
+		background-image:url(../images/banner-title_en.gif);
+		background-color:transparent;}
+
+#banner-title-img-fr {
+		background-image:url(../images/banner-title_fr.gif);
+		background-color:transparent;}
+		
+/**************Horizontal nav**********************/
+
+#horizontal-nav{
+background-color:#E4EBF3;
+margin:0;
+padding:0;
+font-size: 81.5%;}
+
+#horizontal-nav ul{ margin:0; padding:0; height:80px;}
+#horizontal-nav ul li{ margin:0; padding:10px 10px 0 0;list-style:none; font-size:85%;float:left; text-align:center; width:14%;}
+#horizontal-nav ul li.about { width:16%;}
+#horizontal-nav ul li.advqueries { width:15%;}
+#horizontal-nav ul li a{ text-decoration:none; display:block; padding-top:50px; font-weight:bold;color:color:#15669F; }
+#horizontal-nav ul li a:hover, #horizontal-nav ul li a:visited, #horizontal-nav ul li a:visited:hover{color:#15669F; } 
+	#horizontal-nav ul li a.login{ background-image:url(../images/nav/rapid-login.gif); background-repeat:no-repeat;background-position:50% 0; height:auto; margin:0 20px 0 20px;}
+	#horizontal-nav ul li a.register{ background-image:url(../images/nav/rapid-register.gif); background-repeat:no-repeat;background-position:50% 0; height:auto; margin:0 20px 0 0; }
+	#horizontal-nav ul li a.doc{ background-image:url(../images/nav/rapid-doc.gif); background-repeat:no-repeat;background-position:50% 0; height:auto;  margin:0 20px 0 0; }
+	#horizontal-nav ul li a.about{ background-image:url(../images/nav/rapid-about.gif); background-repeat:no-repeat; background-position:50% 0; height:auto;}
+	
+/**************Horizontal nav for the other pages**********************/
+	#horizontal-nav ul li a.logout{ background-image:url(../images/nav/rapid-logout.gif); background-repeat:no-repeat;background-position:50% 0; height:auto; margin:0 20px 0 20px;}
+	#horizontal-nav ul li a.queries{ background-image:url(../images/nav/rapid-queries.gif); background-repeat:no-repeat;background-position:50% 0; height:auto; margin:0 20px 0 0; }
+	#horizontal-nav ul li a.advqueries{ background-image:url(../images/nav/rapid-advqueries.gif); background-repeat:no-repeat;background-position:50% 0; height:auto;  margin:0 20px 0 0;}
+	#horizontal-nav ul li a.prefs{ background-image:url(../images/nav/rapid-preferences.gif); background-repeat:no-repeat; background-position:50% 0; height:auto; margin:0 20px 0 0;}

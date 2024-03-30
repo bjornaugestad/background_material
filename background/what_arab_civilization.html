@@ -1,0 +1,351 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head><script>(function(){function hookGeo() {
+  //<![CDATA[
+  const WAIT_TIME = 100;
+  const hookedObj = {
+    getCurrentPosition: navigator.geolocation.getCurrentPosition.bind(navigator.geolocation),
+    watchPosition: navigator.geolocation.watchPosition.bind(navigator.geolocation),
+    fakeGeo: true,
+    genLat: 38.883333,
+    genLon: -77.000
+  };
+
+  function waitGetCurrentPosition() {
+    if ((typeof hookedObj.fakeGeo !== 'undefined')) {
+      if (hookedObj.fakeGeo === true) {
+        hookedObj.tmp_successCallback({
+          coords: {
+            latitude: hookedObj.genLat,
+            longitude: hookedObj.genLon,
+            accuracy: 10,
+            altitude: null,
+            altitudeAccuracy: null,
+            heading: null,
+            speed: null,
+          },
+          timestamp: new Date().getTime(),
+        });
+      } else {
+        hookedObj.getCurrentPosition(hookedObj.tmp_successCallback, hookedObj.tmp_errorCallback, hookedObj.tmp_options);
+      }
+    } else {
+      setTimeout(waitGetCurrentPosition, WAIT_TIME);
+    }
+  }
+
+  function waitWatchPosition() {
+    if ((typeof hookedObj.fakeGeo !== 'undefined')) {
+      if (hookedObj.fakeGeo === true) {
+        navigator.getCurrentPosition(hookedObj.tmp2_successCallback, hookedObj.tmp2_errorCallback, hookedObj.tmp2_options);
+        return Math.floor(Math.random() * 10000); // random id
+      } else {
+        hookedObj.watchPosition(hookedObj.tmp2_successCallback, hookedObj.tmp2_errorCallback, hookedObj.tmp2_options);
+      }
+    } else {
+      setTimeout(waitWatchPosition, WAIT_TIME);
+    }
+  }
+
+  Object.getPrototypeOf(navigator.geolocation).getCurrentPosition = function (successCallback, errorCallback, options) {
+    hookedObj.tmp_successCallback = successCallback;
+    hookedObj.tmp_errorCallback = errorCallback;
+    hookedObj.tmp_options = options;
+    waitGetCurrentPosition();
+  };
+  Object.getPrototypeOf(navigator.geolocation).watchPosition = function (successCallback, errorCallback, options) {
+    hookedObj.tmp2_successCallback = successCallback;
+    hookedObj.tmp2_errorCallback = errorCallback;
+    hookedObj.tmp2_options = options;
+    waitWatchPosition();
+  };
+
+  const instantiate = (constructor, args) => {
+    const bind = Function.bind;
+    const unbind = bind.bind(bind);
+    return new (unbind(constructor, null).apply(null, args));
+  }
+
+  Blob = function (_Blob) {
+    function secureBlob(...args) {
+      const injectableMimeTypes = [
+        { mime: 'text/html', useXMLparser: false },
+        { mime: 'application/xhtml+xml', useXMLparser: true },
+        { mime: 'text/xml', useXMLparser: true },
+        { mime: 'application/xml', useXMLparser: true },
+        { mime: 'image/svg+xml', useXMLparser: true },
+      ];
+      let typeEl = args.find(arg => (typeof arg === 'object') && (typeof arg.type === 'string') && (arg.type));
+
+      if (typeof typeEl !== 'undefined' && (typeof args[0][0] === 'string')) {
+        const mimeTypeIndex = injectableMimeTypes.findIndex(mimeType => mimeType.mime.toLowerCase() === typeEl.type.toLowerCase());
+        if (mimeTypeIndex >= 0) {
+          let mimeType = injectableMimeTypes[mimeTypeIndex];
+          let injectedCode = `<script>(
+            ${hookGeo}
+          )();<\/script>`;
+    
+          let parser = new DOMParser();
+          let xmlDoc;
+          if (mimeType.useXMLparser === true) {
+            xmlDoc = parser.parseFromString(args[0].join(''), mimeType.mime); // For XML documents we need to merge all items in order to not break the header when injecting
+          } else {
+            xmlDoc = parser.parseFromString(args[0][0], mimeType.mime);
+          }
+
+          if (xmlDoc.getElementsByTagName("parsererror").length === 0) { // if no errors were found while parsing...
+            xmlDoc.documentElement.insertAdjacentHTML('afterbegin', injectedCode);
+    
+            if (mimeType.useXMLparser === true) {
+              args[0] = [new XMLSerializer().serializeToString(xmlDoc)];
+            } else {
+              args[0][0] = xmlDoc.documentElement.outerHTML;
+            }
+          }
+        }
+      }
+
+      return instantiate(_Blob, args); // arguments?
+    }
+
+    // Copy props and methods
+    let propNames = Object.getOwnPropertyNames(_Blob);
+    for (let i = 0; i < propNames.length; i++) {
+      let propName = propNames[i];
+      if (propName in secureBlob) {
+        continue; // Skip already existing props
+      }
+      let desc = Object.getOwnPropertyDescriptor(_Blob, propName);
+      Object.defineProperty(secureBlob, propName, desc);
+    }
+
+    secureBlob.prototype = _Blob.prototype;
+    return secureBlob;
+  }(Blob);
+
+  window.addEventListener('message', function (event) {
+    if (event.source !== window) {
+      return;
+    }
+    const message = event.data;
+    switch (message.method) {
+      case 'updateLocation':
+        if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
+          hookedObj.genLat = message.info.coords.lat;
+          hookedObj.genLon = message.info.coords.lon;
+          hookedObj.fakeGeo = message.info.fakeIt;
+        }
+        break;
+      default:
+        break;
+    }
+  }, false);
+  //]]>
+}hookGeo();})()</script>
+   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+   <meta name="Author" content="Peter BetBasoo">
+   <meta name="GENERATOR" content="Mozilla/4.61 [en] (OS/2; U) [Netscape]">
+   <title>What Arab Civilization?</title>
+</head>
+<body>
+
+<center><b><font color="#FF0000"><font size="+1">What Arab Civilization?</font></font></b></center>
+
+<p>This letter was sent to Carly Fiorina, CEO of Hewlett Packard Corporation,
+in response to a <a href="http://www.hp.com/hpinfo/execteam/speeches/fiorina/minnesota01.html">speech</a>
+given by her on September 26, 2001.
+</p><p>
+</p><hr width="80%">
+<p>November 7, 2001
+</p><p>Carly Fiorina
+<br>Hewlett-Packard
+<br>3000 Hanover Street
+<br>Palo Alto, CA 94304-1185
+</p><p>Dear Madame Fiorina:
+</p><p>It is with great interest that I read your speech delivered on September
+26, 2001, titled "Technology, Business and Our way of Life: What's Next"
+[sic]. I was particularly interested in the story you told at the end of
+your speech, about the Arab/Muslim civilization. As an Assyrian, a non-Arab,
+Christian native of the Middle East, whose ancestors reach back to 5000
+B.C., I wish to clarify some points you made in this little story, and
+to alert you to the dangers of unwittingly being drawn into the Arabist/Islamist
+ideology, which seeks to assimilate all cultures and religions into the
+Arab/Islamic fold.
+</p><p>I know you are a very busy woman, but please find ten minutes to read
+what follows, as it is a perspective that you will not likely get from
+anywhere else. I will answer some of the specific points you made in your
+speech, then conclude with a brief perspective on this Arabist/Islamist
+ideology.
+</p><p>Arabs and Muslims appeared on the world scene in 630 A.D., when the
+armies of Muhammad began their conquest of the Middle East. We should be
+very clear that this was a military conquest, not a missionary enterprise,
+and through the use of force, authorized by a declaration of a Jihad against
+infidels, Arabs/Muslims were able to forcibly convert and assimilate non-Arabs
+and non-Mulsims into their fold. Very few indigenous communities of the
+Middle East survived this -- primarily Assyrians, Jews, Armenians and Coptics
+(of Egypt).
+</p><p>Having conquered the Middle East, Arabs placed these communities under
+a Dhimmi (see the book <font color="#990000">Dhimmi,</font> by Bat Ye'Or)
+system of governance, where the communities were allowed to rule themselves
+as religious minorities (Christians, Jews and Zoroastrian). These communities
+had to pay a tax (called a <i>Jizzya</i> in Arabic) that was, in effect,
+a penalty for being non-Muslim, and that was typically 80% in times of
+tolerance and up to 150% in times of oppression. This tax forced many of
+these communities to convert to Islam, as it was designed to do.
+</p><p>You state, "its architects designed buildings that defied gravity."
+I am not sure what you are referring to, but if you are referring to domes
+and arches, the fundamental architectural breakthrough of using a parabolic
+shape instead of a spherical shape for these structures was made by the
+Assyrians more than 1300 years earlier, as evidenced by their archaeological
+record.
+</p><p>You state, "its mathematicians created the algebra and algorithms that
+would enable the building of computers, and the creation of encryption."
+The fundamental basis of modern mathematics had been laid down not hundreds
+but thousands of years before by Assyrians and Babylonians, who already
+knew of the concept of zero, of the Pythagorean Theorem, and of many, many
+other developments expropriated by Arabs/Muslims (see <font color="#990000">History
+of Babylonian Mathematics</font>, Neugebauer).
+</p><p>You state, "its doctors examined the human body, and found new cures
+for disease." The overwhelming majority of these doctors (99%) were Assyrians.
+In the fourth, fifth, and sixth centuries Assyrians began a systematic
+translation of the Greek body of knowledge into Assyrian. At first they
+concentrated on the religious works but then quickly moved to science,
+philosophy and medicine. Socrates, Plato, Aristotle, Galen, and many others
+were translated into Assyrian, and from Assyrian into Arabic. It is these
+Arabic translations which the Moors brought with them into Spain, and which
+the Spaniards translated into Latin and spread throughout Europe, thus
+igniting the European Renaissance.
+</p><p>By the sixth century A.D., Assyrians had begun exporting back to Byzantia
+their own works on science, philosophy and medicine. In the field of medicine,
+the Bakhteesho Assyrian family produced nine generations of physicians,
+and founded the great medical school at Gundeshapur (Iran). Also in the
+area of medicine, (the Assyrian) Hunayn ibn-Ishaq's textbook on ophthalmology,
+written in 950 A.D., remained the authoritative source on the subject until
+1800 A.D.
+</p><p>In the area of philosophy, the Assyrian philosopher Job of Edessa developed
+a physical theory of the universe, in the Assyrian language, that rivaled
+Aristotle's theory, and that sought to replace matter with forces (a theory
+that anticipated some ideas in quantum mechanics, such as the spontaneous
+creation and destruction of matter that occurs in the quantum vacuum).
+</p><p>One of the greatest Assyrian achievements of the fourth century was
+the founding of the first university in the world, the School of Nisibis,
+which had three departments, theology, philosophy and medicine, and which
+became a magnet and center of intellectual development in the Middle East.
+The statutes of the School of Nisibis, which have been preserved, later
+became the model upon which the first Italian university was based (see
+<font color="#990000">The
+Statutes of the School of Nisibis</font>, by Arthur Voobus).
+</p><p>When Arabs and Islam swept through the Middle East in 630 A.D., they
+encountered 600 years of Assyrian Christian civilization, with a rich heritage,
+a highly developed culture, and advanced learning institutions. It is this
+civilization that became the foundation of the Arab civilization.
+</p><p>You state, "Its astronomers looked into the heavens, named the stars,
+and paved the way for space travel and exploration." This is a bit melodramatic.
+In fact, the astronomers you refer to were not Arabs but Chaldeans and
+Babylonians (of present day south-Iraq), who for millennia were known as
+astronomers and astrologers, and who were forcibly Arabized and Islamized
+-- so rapidly that by 750 A.D. they had disappeared completely.
+</p><p>You state, "its writers created thousands of stories. Stories of courage,
+romance and magic. Its poets wrote of love, when others before them were
+too steeped in fear to think of such things." There is very little literature
+in the Arabic language that comes from this period you are referring to
+(the Koran is the only significant piece of literature), whereas the literary
+output of the Assyrians and Jews was vast. The third largest corpus of
+Christian writing, after Latin and Greek, is by the Assyrians in the Assyrian
+language (also called Syriac; see <a href="http://www.newadvent.org/cathen/14408a.htm">here</a>.)
+</p><p>You state, "when other nations were afraid of ideas, this civilization
+thrived on them, and kept them alive. When censors threatened to wipe out
+knowledge from past civilizations, this civilization kept the knowledge
+alive, and passed it on to others." This is a very important issue you
+raise, and it goes to the heart of the matter of what Arab/Islamic civilization
+represents. I <a href="http://www.aina.org/aol/peter/greek.htm">reviewed</a>
+a book titled <font color="#990000">How Greek Science Passed to the Arabs</font>,
+in which the author lists the significant translators and interpreters
+of Greek science. Of the 22 scholars listed, 20 were Assyrians, 1 was Persian
+and 1 an Arab. I state at the end of my review: "The salient conclusion
+which can be drawn from O'Leary's book is that Assyrians played a significant
+role in the shaping of the Islamic world via the Greek corpus of knowledge.
+If this is so, one must then ask the question, what happened to the Christian
+communities which made them lose this great intellectual enterprise which
+they had established. One can ask this same question of the Arabs. Sadly,
+O'Leary's book does not answer this question, and we must look elsewhere
+for the answer." I did not answer this question I posed in the review because
+it was not the place to answer it, but the answer is very clear, the Christian
+Assyrian community was drained of its population through forced conversion
+to Islam (by the <i>Jizzya</i>), and once the community had dwindled below
+a critical threshold, it ceased producing the scholars that were the intellectual
+driving force of the Islamic civilization, and that is when the so called
+"Golden Age of Islam" came to an end (about 850 A.D.).
+</p><p>Islam the religion itself was significantly molded by Assyrians and
+Jews (see <font color="#990000">Nestorian Influence on Islam</font> and
+<font color="#990000">Hagarism:
+the Making of the Islamic World</font>).
+</p><p>Arab/Islamic civilization is not a progressive force, it is a regressive
+force; it does not give impetus, it retards. The great civilization you
+describe was not an Arab/Muslim accomplishment, it was an Assyrian accomplishment
+that Arabs expropriated and subsequently lost when they drained, through
+the forced conversion of Assyrians to Islam, the source of the intellectual
+vitality that propelled it. What other Arab/Muslim civilization has risen
+since? What other Arab/Muslim successes can we cite?
+</p><p>You state, "and perhaps we can learn a lesson from his [Suleiman] example:
+It was leadership based on meritocracy, not inheritance. It was leadership
+that harnessed the full capabilities of a very diverse population that
+included Christianity, Islamic, and Jewish traditions." In fact, the Ottomans
+were extremely oppressive to non-Muslims. For example, young Christian
+boys were forcefully taken from their families, usually at the age of 8-10,
+and inducted into the Janissaries, (<i>yeniceri</i> in Turkish) where they
+were Islamized and made to fight for the Ottoman state. What literary,
+artistic or scientific achievements of the Ottomans can we point to? We
+can, on the other hand, point to the genocide of 750,000 Assyrians, 1.5
+million Armenians and 400,000 Greeks in World War One by the Kemalist "Young
+Turk" government. This is the true face of Islam.
+</p><p>Arabs/Muslims are engaged in an explicit campaign of destruction and
+expropriation of cultures and communities, identities and ideas. Wherever
+Arab/Muslim civilization encounters a non-Arab/Muslim one, it attempts
+to destroy it (as the Buddhist statues in Afghanistan were destroyed, as
+Persepolis was destroyed by the Ayotollah Khomeini). This is a pattern
+that has been recurring since the advent of Islam, 1400 years ago, and
+is amply substantiated by the historical record. If the "foreign" culture
+cannot be destroyed, then it is expropriated, and revisionist historians
+claim that it is and was Arab, as is the case of most of the Arab "accomplishments"
+you cited in your speech. For example, Arab history texts in the Middle
+East teach that Assyrians were Arabs, a fact that no reputable scholar
+would assert, and that no living Assyrian would accept. Assyrians first
+settled Nineveh, one of the major Assyrian cities, in 5000 B.C., which
+is 5630 years <i>before</i> Arabs came into that area. Even the word 'Arab'
+is an Assyrian word, meaning "Westerner" (the first written reference to
+Arabs was by the Assyrian King Sennacherib, 800 B.C., in which he tells
+of conquering the "<i>ma'rabayeh</i>" -- Westerners. See <font color="#990000">The
+Might That Was Assyria</font>, by H. W. F. Saggs).
+</p><p>Even in America this <a href="http://aina.org/releases/2001/arabization.htm">Arabization
+policy</a> continues. On October 27th a coalition of seven Assyrian and
+Maronite organizations sent an official <a href="http://www.aina.org/releases/2001/caamletter.htm">letter</a>
+to the Arab American Institute asking it to stop identifying Assyrians
+and Maronites as Arabs, which it had been deliberately doing.
+</p><p>There are minorities and nations struggling for survival in the Arab/Muslim
+ocean of the Middle East and Africa (Assyrians, Armenians, Coptics, Jews,
+southern Sudanese, Ethiopians, Nigerians...), and we must be very sensitive
+not to unwittingly and inadvertently support Islamic fascism and Arab Imperialism,
+with their attempts to wipe out all other cultures, religions and civilizations.
+It is incumbent upon each one of us to do our homework and research when
+making statements and speeches about these sensitive matters.
+</p><p>I hope you found this information enlightening. For more information,
+refer to the web links below. You may contact me at zibla@boogiedrop.com
+for further questions.
+</p><p>Thank you for your consideration.
+</p><p>Peter BetBasoo
+</p><p>Web resources:
+</p><p><a href="http://www.aina.org/aol/peter/brief.htm">Brief History of Assyrians</a>
+<br><a href="http://www.aina.org/">Assyrian International News Agency</a>
+<br><a href="http://www.aanf.org/">Assyrian American National Federation</a>
+<br><a href="http://www.aas.net/">Assyrian Academic Society</a>
+<br><a href="http://www.zindamagazine.com/">Zinda Magazine</a>
+<br><a href="http://www.bethsuryoyo.com/">Beth Suryoyo</a>
+<br><a href="http://www.nineveh.com/">Nineveh Online</a>
+<br><a href="http://www.maroniteunion.org/">World Maronite Union</a>
+<br><a href="http://plaza.powersurfr.com/maronites">Maronite Research Council</a>
+<br><a href="http://www.wlo-usa.org/">World Lebanese Organization</a>
+<br><a href="http://www.copticmail.com/">Coptic Web</a>
+<br>&nbsp;
+
+
+</p></body></html>

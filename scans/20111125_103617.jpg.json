@@ -1,0 +1,31 @@
+{
+  "title": "20111125_103617.jpg",
+  "description": "20111125_103617.jpg",
+  "imageViews": "0",
+  "creationTime": {
+    "timestamp": "1322213824",
+    "formatted": "Nov 25, 2011, 9:37:04 AM UTC"
+  },
+  "modificationTime": {
+    "timestamp": "1578215907",
+    "formatted": "Jan 5, 2020, 9:18:27 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "geoDataExif": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "photoTakenTime": {
+    "timestamp": "1322213777",
+    "formatted": "Nov 25, 2011, 9:36:17 AM UTC"
+  }
+}
