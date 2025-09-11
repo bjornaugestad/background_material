@@ -1,0 +1,3248 @@
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/actions.css */
+
+
+.ep_act_bar {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.ep_act_bar table {
+	margin: auto;
+}
+
+.ep_act_list {
+	margin: auto;
+}
+
+td.ep_act_list_button {
+	text-align: right;
+	padding: 0.25em 0 0.25em 0;
+}
+
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/blister.css */
+
+
+/* EPrints 3 blister bar style */
+
+/* ep_blister */
+
+
+
+.ep_blister_bar {
+	margin: auto;
+}
+.ep_blister_join {
+	background-image: url(images/blister_arrow.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 20px;
+}
+.ep_blister_node {
+	padding: 3px;
+	text-align: center;
+	border: solid 1px #cccccc;
+	background-image: url(images/gray_bar.png);
+}
+.ep_blister_node_selected {
+	padding: 3px;
+	text-align: center;
+	border: solid 1px #204f76;
+	background-image: url(images/blue_bar.png);
+	color: #ffffff;
+}
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/columns.css */
+
+
+/* paginated columns */
+
+.ep_columns {
+	margin: auto;
+}
+
+td.ep_columns_cell {
+	border-left: 1px dashed #ccc;
+	border-bottom: 1px solid #ccc;
+}
+td.ep_columns_cell_first {
+}
+td.ep_columns_cell_last {
+	border-right: 1px dashed #ccc;
+}
+
+th.ep_columns_title {
+	background: url(images/gray_bar.png) repeat-x;
+	font-weight: normal;
+	border-top: solid 1px #888;	
+	border-bottom: solid 1px #888;	
+	border-left: solid 1px #888;	
+}
+th.ep_columns_title a {
+	color: #000;
+	font-weight: normal;
+}
+th.ep_columns_title_last {
+	border-right: solid 1px #888;	
+}
+
+
+td.ep_columns_alter {
+	background: url(images/gray_bar.png) repeat-x;
+	border-left: solid 1px #888;
+	border-bottom: solid 1px #888;
+}
+td.ep_columns_alter_last {
+	border-right: solid 1px #888;
+}
+
+td.ep_columns_no_items {
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	padding: 0.5em;
+	text-align: center;
+	font-size: 120%;
+}
+
+.ep_columns_add {
+	text-align: center;
+}
+
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/drop.css */
+
+
+/* style for ajax suggestion drops */
+
+.ep_drop_target {
+}
+
+.ep_drop_target ul {
+	margin: 0px;
+	padding: 4px;
+	list-style: none;
+	background-color: white;
+	border: 1px dotted #888;
+	z-index: 6;
+}
+	
+.ep_drop_target ul li {
+	margin: 0px;
+	padding: 3px;
+	list-style: none;
+	border-top: 1px dashed #ccc;
+	cursor: pointer;
+}
+.ep_drop_target ul li.ep_first {
+	border-top: none;
+}
+
+.ep_drop_target ul li.selected {
+	background-color: #e0e0ff;
+}
+
+.ep_drop_target ul ul {
+	display: none;
+}
+
+.ep_drop_loading {
+	margin: 0px;
+	text-align: center;
+	background-color: white;
+	border: 1px dotted #888;
+	z-index: 6;
+	position: absolute;
+}
+.ep_drop_loading img {
+	padding: 8px;
+}
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/fields.css */
+
+
+/* style for metafields */
+
+dl.ep_field_set_long dt label {
+	margin-bottom: 0.2em;
+	font-weight: bold;
+}
+
+dl.ep_field_set_long dd {
+	margin-bottom: 0.5em;
+}
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/form.css */
+
+
+/* Form related styles */
+
+form {
+	display: inline;
+}
+
+select, input.ep_form_text, textarea {
+	padding: 1px 2px 1px 2px;
+	margin-right: 4px;
+	border: solid 1px #ccc;
+}
+
+.ep_form_example {
+	font-weight: bold;
+	color: blue;
+}
+
+/* buttons */
+
+.ep_form_button_bar {
+	text-align: center;
+	padding: 4px;
+	clear: both;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.ep_form_action_button, .ep_form_internal_button {
+	text-align: center;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #e0e0ff #808080 #808080 #e0e0ff;
+	background-image: url(images/blue_bar.png);
+	background-color: #1f4f76;
+	color: white;
+	font-weight: normal;
+}
+
+/* form fields */
+
+.ep_form_field_help {
+        font-size: small ;
+}
+
+.ep_form_field_name {
+        padding-top: 1em;
+	font-weight: bold;
+}
+
+.ep_form_field_input {
+        padding-bottom: 3pt;
+}
+
+/* input fields grid */
+
+
+.ep_form_input_grid th {
+	vertical-align: middle;
+	text-align: center;
+	font-size: 80%;
+}
+.ep_form_input_grid td {
+	vertical-align: middle;
+}
+
+td.ep_form_input_grid_pos {
+	padding-right: 4px;
+}
+td.ep_form_input_grid_arrows {
+	white-space: nowrap;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+
+td.ep_form_input_grid_wide {
+	text-align: left;
+}
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/general.css */
+
+
+body {
+	margin: 1em;
+	font-family: Arial,Sans-serif;
+	font-size: 80%;
+}
+
+.ep_no_js { 
+	display: none; 
+}
+
+.ep_no_js_inline { 
+	display: none; 
+}
+
+.ep_no_js_table_cell { 
+	display: none; 
+}
+
+.ep_hide { 
+	display: none; 
+}
+
+h1 {
+	margin: 0px 0px 10px 0px;
+        font: bold 130% Arial,Sans-serif;
+	text-align: center;
+        color: #606060;
+}
+
+h2 {
+        font: bold 110% Arial,Sans-serif;
+        color: #606060;
+}
+
+h3 {
+        font: 120% Arial,Sans-serif;
+        color: #606060;
+}
+
+h4 {
+        font: 100% Arial,Sans-serif;
+        color: #606060;
+}
+
+hr {
+	border: 0px;
+	color: #ccc;
+	background-color: #ccc;
+	height: 2px;
+}
+
+.ep_required {
+}
+
+.ep_toggle a, a.ep_toggle {
+	text-decoration: none;
+	color: #44c;
+}
+
+th.ep_row {
+	border-bottom: dashed #bbf 1px;
+	padding-right: 0.25em;
+	text-align: right;
+	width: 20%;
+}
+td.ep_row {
+	border-left: dashed #bbf 1px;
+	border-bottom: dashed #bbf 1px;
+	padding-left: 0.25em;
+	text-align: left;
+}
+th.ep_title_row {
+	border-top: solid 1px #999999;
+	border-bottom: solid 1px #999999;
+	padding: 0.1em 0.5em 0.1em 0.5em;
+	font-size: 100%;
+	height: 2em;
+	background-image: url(images/gray_bar.png);
+	background-color: #808080;
+	color: #333;
+	font-weight: normal;
+}
+
+.ep_highlight {
+	padding: 0.5em;
+	border: solid 2px #ff8888;
+	background-color: #ffeeee;
+}
+
+.ep_block {
+	width: auto;
+	margin: 0.25em auto 0.25em auto;
+	text-align: center;
+}
+.ep_block td {
+	text-align: left;
+}
+ul {
+	text-align: left;
+}
+.ep_doc_icon
+{
+	padding: 2px;
+}
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/icontable.css */
+
+
+table.ep_icontable {
+	border-collapse: collapse;
+}
+table.ep_icontable th {
+	border: solid 1px #999;
+	background-color: #fff;
+	text-align: center;
+}
+table.ep_icontable td {
+	padding-left: 4px;
+	border: solid 1px #999;
+}
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/items.css */
+
+
+/* Items Screen */
+
+.ep_items_filters {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.ep_items_filters img {
+	border-width: 0px;
+	margin-left: 10px;
+	vertical-align: -2px;
+}
+
+.ep_items_filters a {
+	color: #000000;
+	text-decoration: none;
+}
+
+
+td.ep_columns_cell_inbox {
+	background-color: #ffc;
+	border-left: 1px dashed #ccc;
+	border-bottom: 1px solid #888;
+}
+td.ep_columns_cell_buffer {
+	background-color: #dde;
+	border-left: 1px dashed #ccc;
+	border-bottom: 1px solid #888;
+}
+td.ep_columns_cell_archive {
+	background-color: #cfc;
+	border-left: 1px dashed #ccc;
+	border-bottom: 1px solid #888;
+}
+td.ep_columns_cell_deletion {
+	background-color: #ccc;
+	border-left: 1px dashed #ccc;
+	border-bottom: 1px solid #888;
+}
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/latest.css */
+
+
+/* latest and latest tool */
+
+div.ep_latest_result {
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+}
+
+div.ep_latest_tool_result {
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+}
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/lightbox.css */
+
+#lightbox{	position: absolute;	left: 0; width: 100%; z-index: 100; text-align: center; line-height: 0;}
+#lightbox img{ width: auto; height: auto;}
+#lightbox a img{ border: none; }
+
+#outerImageContainer{ position: relative; background-color: #fff; width: 250px; height: 250px; margin: 0 auto; }
+#imageContainer{ padding: 10px; }
+
+#loading{ position: absolute; top: 40%; left: 0%; height: 25%; width: 100%; text-align: center; line-height: 0; }
+/* #hoverNav{ position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 10; }
+#imageContainer>#hoverNav{ left: 0;} */
+#hoverNav a{ outline: none;}
+
+/* #prevLink, #nextLink{ width: 49%; height: 100%; background-image: url(data:image/gif;base64,AAAA); display: block; }
+#prevLink { left: 0; float: left;}
+#nextLink { right: 0; float: right;}
+#prevLink:hover, #prevLink:visited:hover { background: url(images/lightbox/prevlabel.gif) left 15% no-repeat; }
+#nextLink:hover, #nextLink:visited:hover { background: url(images/lightbox/nextlabel.gif) right 15% no-repeat; } */
+
+#hoverNav { height: 30px; }
+#prevLink, #nextLink { width: 49%; height: 100%; display: block; }
+#prevLink { left: 0; float: left; background: url(images/lightbox/prevlabel.gif) left 0 no-repeat; }
+#nextLink { right: 0; float: right; background: url(images/lightbox/nextlabel.gif) right 0 no-repeat; }
+
+#imageDataContainer{ font: 10px Verdana, Helvetica, sans-serif; background-color: #fff; margin: 0 auto; line-height: 1.4em; overflow: auto; width: 100%	; }
+
+#imageData{	padding:0 10px; color: #666; }
+#imageData #imageDetails{ width: 70%; float: left; text-align: left; }	
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}			
+#imageData #bottomNavClose{ width: 66px; float: right;  padding-bottom: 0.7em; outline: none;}	 	
+
+#overlay{ position: absolute; top: 0; left: 0; z-index: 90; width: 100%; height: 500px; background-color: #000; }
+
+#lightboxMovie { width: 320px; height: 264px; }
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/mail.css */
+
+
+
+.ep_mail_view {
+	border: dashed 2px #ccc;
+	margin-top: 20px;
+	background-color: #eee;
+}
+
+.ep_mail_header {
+	margin: 4px; 
+	padding: 2px;
+	font-family: monospace;
+}
+
+.ep_mail_body {
+	margin: 4px;
+	padding: 2px;
+}
+
+.ep_mail_body textarea {
+	background-color: #ccc;
+	border: solid #888 1px;
+}
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/messages.css */
+
+
+/* Message styles - used to provide alerts and errors */
+
+.ep_msg_message, .ep_msg_warning, .ep_msg_error, .ep_msg_other {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.ep_msg_message_icon, .ep_msg_warning_icon, .ep_msg_error_icon {
+	padding: 10px;
+}
+/*
+
+Not currently using titles
+
+.ep_msg_message_title {
+	color: #70cf70;
+	padding: 2px 10px 2px 10px;
+}
+.ep_msg_error_title {
+	color: #ff8080;
+	padding: 2px 10px 2px 10px;
+}
+.ep_msg_warning_title {
+	color: #cf9070;
+	padding: 2px 10px 2px 10px;
+}
+
+*/
+
+.ep_msg_message_content {
+	background-image: url(images/green_back.png);
+	background-color: #c0ffc0;
+	border: solid 1px #80ff80;
+}
+
+.ep_msg_error_content {
+	background-image: url(images/red_back.png);
+	background-color: #ffe0e0;
+	border: solid 1px #ffc0c0;
+}
+
+.ep_msg_warning_content {
+	background-image: url(images/orange_back.png);
+	background-color: #ffe0c0;
+	border: solid 1px #ffc080;
+}
+
+.ep_msg_other_content {
+	background-image: url(images/blue_back.png);
+	background-color: #9999FF;
+	border: solid 1px #9999FF;
+}
+
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/multi.css */
+
+
+
+/* 
+   Styles for the multi-field component.
+
+   ep_multi_*
+
+*/
+
+table.ep_multi
+{
+	width: 100%;
+}
+
+tr.ep_first th.ep_multi_heading,
+tr.ep_first td.ep_multi_input, 
+tr.ep_first td.ep_multi_help 
+{
+	border-top: none;
+}
+
+th.ep_multi_heading
+{
+	border-top: dashed #bbf 1px;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-right: 0.5em;
+	text-align: right;
+}
+
+td.ep_multi_input
+{
+	border-top: dashed #bbf 1px;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	border-left: dashed #bbf 1px;
+}
+
+td.ep_multi_help
+{
+	white-space: nowrap;
+	border-top: dashed #bbf 1px;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 0.5em;
+	vertical-align: top;
+	text-align: right;
+}
+
+/* help bits */
+
+.ep_multi_inline_help 
+{
+	padding-bottom: 0.5em;
+}
+	
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/preview.css */
+
+
+/* 
+   Styles for the file preview popup.
+
+   ep_preview_*
+
+*/
+
+
+.ep_preview
+{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 400px;	
+}
+
+.ep_preview table
+{
+	border: solid 1px black;
+	background-color: white;
+	padding: 4px;
+	margin: auto;
+}
+
+.ep_preview_title
+{
+	padding-top: 3px;
+	text-align: center;
+}
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/progress.css */
+
+div#progress {
+	margin: 0px auto;
+	width: 382px;
+}
+
+.progressmeter {
+    font-size: 10pt;
+    text-align: center;
+}
+
+.progressmeter table {
+}
+
+.progressmeter th {
+    font-weight: bold;
+    text-align: right;
+}
+
+.progressmeter td {
+    text-align: left;
+}
+
+.finished {
+    color: #667799;
+}
+
+.progressmeter .meter {
+    position: relative;
+    background-color: lightgrey;
+    border: 2px solid #667799;
+    height: 20px;
+    width: 380px;
+}
+
+.progressmeter .meter .amount {
+	margin: 0px auto 0px 0px;
+    background-color: #667799;
+    width: 0px;
+    height: 20px
+}
+
+.progressmeter .meter .percent {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 20px;
+    z-index: 1000;
+    line-height: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/savedsearches.css */
+
+
+
+table.ep_savedsearches {
+	margin: 10px auto 10px auto;
+}
+
+table.ep_savedsearches th {
+	border-bottom: 1px solid #ccc;
+}
+table.ep_savedsearches td {
+	border-bottom: 1px solid #ccc;
+}
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/search.css */
+
+
+/* EPrints 3 search form style */
+
+
+
+/* buttons are on the form, controls on the results */
+.ep_search_buttons, .ep_search_controls, .ep_search_controls_bottom {
+	border-top: 1px solid rgb(216, 219, 239); 
+	border-bottom: 1px solid rgb(216, 219, 239);
+	text-align: center;
+	background: #e7e9f5 url(images/toolbox.png) repeat-x;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	margin-bottom: 0.25em;
+	margin-top: 0.25em;
+}
+
+.ep_search_fields {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.ep_search_fields th {
+	padding: 4px;
+}
+	
+.ep_search_fields td {
+	padding: 4px;
+}
+	
+
+.ep_search_control
+{
+	padding: 0px 4px 0px 4px;
+}
+
+.ep_search_export {
+	margin: 0.25em auto 0.25em auto;
+	text-align: center;
+}
+
+.ep_search_reorder {
+	margin: 0.4em auto 0 auto;
+	text-align: center;
+}
+
+.ep_search_tool {
+	white-space: nowrap;
+}
+.ep_search_tool img {
+	vertical-align: -2px;
+	padding-left: 0.5em;
+}
+.ep_search_tool a {
+	text-decoration: none;
+	color: #888;
+}
+
+
+.ep_search_feed {
+	white-space: nowrap;
+}
+.ep_search_feed img {
+	vertical-align: -2px;
+	padding-left: 0.5em;
+}
+.ep_search_feed a {
+	text-decoration: none;
+	color: #888;
+}
+
+.ep_search_results
+{
+	margin: 1em 0 1em 0;
+}
+
+.ep_search_desc
+{
+	text-align: center;
+	margin: 0.25em 0 0 0;
+}
+
+.ep_search_result td
+{
+	padding: 4px;
+	border-bottom: dashed #bbf 1px;
+}
+
+.ep_paginate_list
+{
+	margin: auto;
+	display: table;
+}
+
+.ep_search_field_name
+{
+	font-weight: bold;
+	margin-top: 0.5em;
+}
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/subjectinput.css */
+
+
+/* 
+   Styles for the subject component.
+
+   ep_subjectinput_*
+
+*/
+
+.ep_subjectinput_toggle {
+	text-decoration: none;
+	color: #000000;
+}
+
+.ep_subjectinput_selections {
+	margin: 0.5em auto 0.5em auto;
+	margin-top: 0.5em; 
+	padding: 0.5em; 
+}
+
+.ep_subjectinput_selected {
+	font-weight: bold;
+}
+
+.ep_subjectinput_selected_subject {
+	font-weight: bold;
+}
+
+ul.ep_subjectinput_subjects {
+	list-style: none;
+}
+ul.ep_subjectinput_subjects li {
+	margin-top: 3px;
+	margin-bottom: 3px;
+	list-style: none;
+}
+ul.ep_subjectinput_subjects img {
+	vertical-align: -2px;
+}
+
+
+.ep_subjectinput_selections {
+	padding-bottom: 10px;
+	border-bottom: dashed #808080 1px; 
+	margin-bottom: 10px;
+}
+.ep_subjectinput_selections td.ep_first {
+	border-top: none;
+}
+
+.ep_subjectinput_selections td {
+	border-top: dashed #ccc 1px; 
+}
+
+.ep_subjectinput_results {
+	border: dashed #c8cbdf 1px; 
+	margin-top: 0.5em; 
+	padding: 0.5em; 
+	background-color: white;
+	list-style: none;
+}
+
+.ep_subjectinput_results td.ep_first {
+	border-top: none;
+}
+
+.ep_subjectinput_results td {
+	border-top: dashed #ccc 1px; 
+}
+
+.ep_subjectinput_add_button, .ep_subjectinput_remove_button {
+	border: solid blue 1px;
+	padding: 1px;
+	background-color: transparent;
+	font-size: 70%;
+	color: blue;
+}
+
+
+.ep_subjectinput_searchbar {
+	text-align: center;
+}
+
+/* End of subject component section */
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/summary.css */
+
+
+/* Item Summary */
+
+.ep_summary_content {
+}
+.ep_summary_content_top {
+}
+.ep_summary_content_bottom {
+}
+.ep_summary_content_left {
+	float: left;
+}
+.ep_summary_content_right {
+	float: right;
+}
+.ep_summary_content_after {
+	clear: both;
+}
+
+
+.ep_summary_content_left .ep_summary_box {
+	width: 200px;
+	margin-right: 10px;
+}
+.ep_summary_content_right .ep_summary_box {
+	width: 200px;
+	margin-left: 10px;
+}
+
+
+.ep_summary_box {
+	margin-bottom: 10px
+}
+.ep_summary_box_title {
+	background-image: url(images/toolbox_title.png);
+	font-weight: normal;
+	border-left: 2px solid #e0e0ff;
+	padding: 2px 6px 2px 6px; 
+	border: solid 1px #d8dbef;
+	font-weight: bold;
+	font-size: 115%;
+}
+.ep_summary_box_body {
+	padding: 2px 6px 2px 6px; 
+	border-left: 2px solid #e0e0ff;
+	border-right: 2px solid #e0e0ff;
+	border-bottom: 2px solid #e0e0ff;
+	background-color: #eee;
+}
+.ep_summary_box_title a {
+	text-decoration: none;
+}
+.ep_summary_box_title img
+{
+	vertical-align: -1px;
+}
+
+
+
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/surround.css */
+
+
+/* EPrints 3 default workflow component-surround style */
+
+/* ep_sr */
+
+.ep_sr_component {
+	padding: 0px;
+	background-color: transparent;
+	margin-top: 10px;
+}
+.ep_sr_component .ep_sr_title_bar {
+	background-image: url(images/toolbox_title.png);
+	padding: 2px 6px 2px 6px; 
+	border-left: solid 1px #d8dbef;
+	border-top: solid 1px #d8dbef;
+	border-right: solid 1px #d8dbef;
+}
+
+.ep_sr_component .ep_sr_title_bar table {
+}
+.ep_sr_component .ep_sr_title {
+	font-weight: bold;
+	font-size: 115%;
+	color: #444;
+}
+.ep_sr_component .ep_sr_content {
+	clear: both;
+	background: #e7e9f5 url(images/toolbox.png) repeat-x;
+	border: solid 1px #d8dbef;
+	padding: 6px;
+}
+
+/* collapse bar */
+
+.ep_sr_collapse_bar {
+	background-image: url(images/toolbox_title.png);
+	padding: 2px 6px 2px 6px; 
+	border: solid 1px #d8dbef;
+	font-weight: bold;
+	font-size: 115%;
+	margin-top: 10px;
+}
+.ep_sr_collapse_bar a {
+	text-decoration: none;
+}
+.ep_sr_title a {
+	text-decoration: none;
+}
+.ep_sr_collapse_link img
+{
+	vertical-align: -1px;
+}
+
+/* help style - not primetime */
+
+.ep_sr_component .ep_sr_help {
+	margin-bottom: 8px;
+}
+.ep_sr_component .ep_sr_show_help {
+	white-space: nowrap;
+}
+.ep_sr_component .ep_sr_show_help a {
+	text-decoration: none;
+}	
+.ep_sr_component .ep_sr_hide_help {
+	white-space: nowrap;
+}
+.ep_sr_component .ep_sr_hide_help a {
+	text-decoration: none;
+}	
+.ep_sr_component .ep_sr_title_bar {
+}
+.ep_sr_show_help img {
+	vertical-align: -2px;
+}
+.ep_sr_hide_help img {
+	vertical-align: -2px;
+}
+
+
+/* used for multi, maybe should be elsewhere */
+.ep_sr_component .ep_sr_help_chunk {
+	border-bottom: 1px solid #888;
+	padding-bottom: 4px; 
+	margin-bottom: 4px;
+}
+
+.ep_sr_component .ep_form_input_grid {
+	margin: auto;
+}
+.ep_multi_input .ep_form_input_grid {
+	margin-left: 0px;
+}
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/tabs.css */
+
+
+/* Tab Bar */
+
+table.ep_tab_bar {
+	margin-top: 10px;
+	width: 100%;
+}
+
+td.ep_tab {
+	background-color: #e0e0ff;
+	text-align: center;
+	border: solid #d8dbef 1px;
+	background-image: url(images/gray_bar.png);
+}
+td.ep_tab a {
+	display: block;
+	padding: 2px 8px 4px 8px;
+	text-decoration: none;
+	color: #000000;
+}
+
+td.ep_tab_selected {
+	text-align: center;
+	background-color: #ffffff;
+	border-left: solid #d8dbef 1px;
+	border-top: solid #d8dbef 1px;
+	border-right: solid #d8dbef 1px;
+	border-bottom: solid #ffffff 1px;
+}
+td.ep_tab_selected a {
+	text-decoration: none;
+	padding: 2px 8px 4px 8px;
+	color: #000000;
+}
+
+td.ep_tab_spacer {
+	border-bottom: solid #d8dbef 1px;
+	width: 20px;
+}
+
+.ep_tab_panel {
+	border-right: solid #d8dbef 1px;
+	border-bottom: solid #d8dbef 1px;
+	border-left: solid #d8dbef 1px;
+	background: #e7e9f5 url(images/toolbox.png) repeat-x;
+	padding: 12px;
+	clear: both;
+}
+
+table.ep_tab_bar a {
+	text-decoration: none;
+}
+
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/template.css */
+
+
+/* EPrints 3 template styles */
+/* prefix all styles with ep_tm */
+
+.ep_tm_logo img {
+	float: right;
+	padding-bottom: 4px;
+	border-style: none;
+}
+
+.ep_tm_archivetitle {
+        font: 40px Arial,Sans-serif;
+	color: #269ae3;
+	text-decoration: none;
+}
+
+.ep_tm_main {
+        margin: 1em;
+}
+
+hr.ep_tm_last {
+	color: #240f78;
+	background-color: #240f78;
+}
+
+.ep_tm_footer {
+	clear: both;
+}
+
+/* Menu Bar */
+
+ul.ep_tm_menu, ul.ep_tm_key_tools {
+	clear: both;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+ul.ep_tm_menu {
+	background: #204f76;
+	background-image: url(images/blue_bar.png);
+}
+
+ul.ep_tm_menu li, ul.ep_tm_key_tools li {
+	list-style: none;
+	display: inline;
+}
+
+ul.ep_tm_menu li {
+	padding-left: 10px;
+	padding-right: 10px;
+	border-right: solid 2px white;
+	font-weight: bold;
+}
+
+ul.ep_tm_menu li:hover {
+	background: #279ae2;
+}
+
+ul.ep_tm_menu li a, ul.ep_tm_key_tools li a {
+}
+
+ul.ep_tm_menu li a {
+	text-decoration: none;
+	color: white;
+}
+ul.ep_tm_menu li a:visited {
+	color: white;
+}
+
+/* end of menu bar */
+
+/* Action Menu Bar */
+
+ul.ep_tm_key_tools li {
+	padding: 0px .5em;
+	border-left: 1px solid #666;
+}
+
+ul.ep_tm_key_tools li:first-child {
+	padding-left: 0px;
+	border-left: none;
+}
+
+/* end of Action Menu Bar */
+
+/* Search bar */
+
+.ep_tm_searchbar {
+	color: #606060;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-top: solid 4px white;
+	background: #ccc;
+	background-image: url(images/gray_bar.png);
+}
+
+.ep_tm_searchbarbutton {
+	text-align: center;
+	background-image: url(images/blue_bar.png);
+	background-color: #1f4f76;
+	color: white;
+	font-weight: normal;
+	font-size: 80%;
+	padding: 0px;
+}
+
+.ep_tm_searchbarbox {
+	font-size: 80%;
+	padding: 2px;
+	border: #606060 1px solid;
+}
+
+/* end of search bar */
+
+#ep_tm_languages {
+	display: inline;
+}
+#ep_tm_languages a {
+	margin-left: 4px;
+}
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/toolbox.css */
+
+
+/* Toolbox styles - used to subdivide some content */
+
+.ep_toolbox {
+	margin-bottom: 10px;
+}
+
+.ep_toolbox_title {
+	padding: 2px 10px 2px 10px;
+	color: #808080;
+}
+
+.ep_toolbox_content {
+	padding: 10px;
+	background: #e7e9f5 url(images/toolbox.png) repeat-x;
+	border: solid 1px #d8dbef;
+}
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/upload.css */
+
+
+/* 
+   Styles for the upload component.
+
+   ep_upload_*
+
+*/
+
+.ep_upload_newdoc
+{
+	text-align: center;
+/*	margin-top: 1em;
+	margin-bottom: 1em; */
+}
+
+.ep_upload_fields th
+{
+	text-align: right;
+}
+
+/* Document section */
+
+.ep_upload_doc
+{
+	margin-bottom: 0.5em;
+	background: #e7e9f5 url(images/toolbox.png) repeat-x;
+	border: solid 1px #d8dbef;
+}
+
+.ep_upload_doc .ep_upload_doc_title_bar {
+	padding: 0px 6px 0px 6px; 
+	border-bottom: solid 1px #d8dbef;
+}
+.ep_upload_doc .ep_upload_doc_title {
+	color: #444;
+}
+.ep_upload_doc .ep_upload_doc_content {
+	clear: both;
+	padding: 6px;
+}
+
+.ep_update_doc_delete {
+	white-space: nowrap;
+}
+.ep_update_doc_delete input {
+	vertical-align: -2px;
+}
+
+.ep_update_doc_options {
+	white-space: nowrap;
+}
+.ep_update_doc_options img {
+	vertical-align: -2px;
+	border: none;
+}
+.ep_update_doc_options a {
+	text-decoration: none;
+}
+
+.ep_upload_doc_toolbar
+{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	text-align: center;
+}
+
+.ep_upload_files
+{
+/*	border: dashed #c8cbdf 1px; 
+	text-align: center;
+	margin-top: 0.5em; 
+	padding: 0.5em; 
+	background-color: white; */
+}
+
+.ep_upload_file_table 
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0.5em;
+}
+.ep_upload_add_file_toolbar
+{
+	margin-top: 0.5em;
+}
+
+.ep_upload_doc_expansion_bar
+{
+	text-align: right;
+	padding: 2px .5em;
+}
+.ep_upload_doc_expansion_bar a
+{
+	cursor: pointer;
+	text-decoration: none;
+}
+
+/* End of Document section */
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/view.css */
+
+
+
+.ep_view_page h2 {
+	margin-top: 3em;
+	border-bottom: solid 1px #808080;
+}
+
+.ep_view_timestamp {
+	margin-top: 3em;
+	text-align: right;
+}
+
+.ep_view_subjects {
+	padding: 10px;
+	background: #e7e9f5 url(images/toolbox.png) repeat-x;
+	border: solid 1px #d8dbef;
+	margin-bottom: 20px;
+}
+
+.ep_view_blurb {
+	margin-top: 20px;
+}
+
+.ep_view_group_by_current {
+	font-weight: bold;
+}
+
+.ep_view_group_by {
+	border-top: 1px solid rgb(216, 219, 239); 
+	border-bottom: 1px solid rgb(216, 219, 239);
+	text-align: center;
+	background: #e7e9f5 url(images/toolbox.png) repeat-x;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	margin-bottom: 0.75em;
+	margin-top: 0.25em;
+}
+
+.ep_view_cols {
+	width: 100%;
+	margin-top: 1em;
+}
+
+.ep_view_cols_2 td { width: 50%; }
+.ep_view_cols_3 td { width: 33.3%; }
+.ep_view_cols_4 td { width: 25%; }
+.ep_view_cols_5 td { width: 20%; }
+.ep_view_cols_6 td { width: 16.6%; }
+.ep_view_cols_7 td { width: 14.28%; }
+.ep_view_cols_8 td { width: 12.5%; }
+
+.ep_view_cols ul {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+
+	
+
+
+
+/* From: /opt/eprints3/archives/aei2/cfg/static/style/auto/zzz_local.css */
+
+/* CSS Document */
+
+/*
+ * This CSS file will be applied after all the built in styles.
+ *
+ * CSS files are loaded in alphabetic order, hence the  "zzz" in
+ * the filename to force it to load after the other css files!
+ *
+ * Add any local over-rides here.
+ *
+ * To totally replace a system css file, create a file of the same
+ * name in this directory. eg. messages.css
+ *
+*/
+/* From: /opt/eprints3/lib/static/style/auto/actions.css */
+
+.ep_act_bar {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.ep_act_bar table {
+  margin: auto;
+}
+
+.ep_act_list {
+  margin: auto;
+}
+
+td.ep_act_list_button {
+  text-align: right;
+  padding: 0.25em 0 0.25em 0;
+}
+
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/blister.css */
+
+
+/* EPrints 3 blister bar style */
+
+/* ep_blister */
+
+
+
+.ep_blister_bar {
+  margin: auto;
+}
+.ep_blister_join {
+  background-image: url(images/blister_arrow.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 20px;
+}
+.ep_blister_node {
+  padding: 3px;
+  text-align: center;
+  border: solid 1px #ccc;
+  background-image: none;
+  background-color: #eee;
+  white-space: pre-wrap;
+}
+.ep_blister_node_selected {
+  padding: 3px;
+  text-align: center;
+  border: solid 1px #ebe3cd;
+  background-image: none; /*url(images/blue_bar.png);*/
+  color: #444;
+  white-space: pre-wrap;
+}
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/columns.css */
+
+
+/* paginated columns */
+
+.ep_columns {
+  margin: auto;
+}
+
+td.ep_columns_cell {
+  border-left: 1px dashed #ccc;
+  border-bottom: 1px solid #ccc;
+}
+td.ep_columns_cell_first {
+}
+td.ep_columns_cell_last {
+  border-right: 1px dashed #ccc;
+}
+
+th.ep_columns_title {
+  border-left: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+  border-top: solid 1px #ccc;
+  background-image: none;
+  background-color: #eee;
+  font-weight: normal;
+}
+th.ep_columns_title a {
+  color: #000;
+  font-weight: normal;
+}
+th.ep_columns_title_last {
+  border-right: solid 1px #888;  
+}
+
+
+td.ep_columns_alter {
+  background-image: none;
+  background-color: #eee;
+  border-left: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+}
+td.ep_columns_alter_last {
+  border-right: solid 1px #888;
+}
+
+td.ep_columns_no_items {
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 0.5em;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.ep_columns_add {
+  text-align: center;
+}
+
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/drop.css */
+
+
+/* style for ajax suggestion drops */
+
+.ep_drop_target {
+}
+
+.ep_drop_target ul {
+  margin: 0px;
+  padding: 4px;
+  list-style: none;
+  background-color: white;
+  border: 1px dotted #888;
+  z-index: 6;
+}
+  
+.ep_drop_target ul li {
+  margin: 0px;
+  padding: 3px;
+  list-style: none;
+  border-top: 1px dashed #ccc;
+  cursor: pointer;
+}
+.ep_drop_target ul li.ep_first {
+  border-top: none;
+}
+
+.ep_drop_target ul li.selected {
+  background-color: #eee;
+}
+
+.ep_drop_target ul ul {
+  display: none;
+}
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/fields.css */
+
+
+/* style for metafields */
+
+dl.ep_field_set_long dt label {
+  margin-bottom: 0.2em;
+  font-weight: bold;
+}
+
+dl.ep_field_set_long dd {
+  margin-bottom: 0.5em;
+}
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/form.css */
+
+
+/* Form related styles */
+
+form {
+  display: inline;
+}
+
+select, input.ep_form_text, textarea {
+  padding: 1px 2px 1px 2px;
+  margin-right: 4px;
+  border: solid 1px #ccc;
+}
+
+.ep_form_example {
+  font-weight: bold;
+  color: blue;
+}
+
+/* buttons */
+
+.ep_form_button_bar {
+  text-align: center;
+  padding: 4px;
+  background: transparent;
+  background-image: none; /*url(images/toolbox_title.png);*/
+  clear: both;
+  border: solid 0px #dbd2ba;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.ep_form_action_button, .ep_form_internal_button {
+  text-align: center;
+  border-width: 0px;
+  border-style: solid;
+  border-color: transparent;
+  background-image: none;
+  color: white;
+  padding: 3px 6px;
+  margin: 3px 1px;
+  font-weight: normal;
+  background-color: #999;
+
+}
+
+/* form fields */
+
+.ep_form_field_help {
+   font-size: 1em ;
+}
+
+.ep_form_field_name {
+  padding: 1.5em 0em 0.5em 0em;
+  font-size: 1.3em ;
+  font-weight: bold;
+}
+
+.ep_form_field_input {
+  padding: 0.5em;
+  background-color: #eee;
+  width: 710px;
+}
+
+/* input fields grid */
+
+
+.ep_form_input_grid th {
+  vertical-align: middle;
+  text-align: left;
+  font-size: 1em;
+  width: 600px;
+  white-space: pre-wrap;
+}
+.ep_form_input_grid td {
+  vertical-align: middle;
+  width: 600px;
+  white-space: pre-wrap;
+}
+
+td.ep_form_input_grid_pos {
+  padding-right: 4px;
+}
+td.ep_form_input_grid_arrows {
+  white-space: pre-wrap;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+td.ep_form_input_grid_wide {
+  text-align: left;
+  max-width:20px;
+
+}
+
+/* From: /opt/eprints3/lib/static/style/auto/general.css */
+
+.ep_hide {
+  display: none;
+}
+
+h1 {
+  margin: 0px 0px 10px 0px;
+  text-align: left;
+  margin: 1em 0 0 0;
+  padding: 0;
+  font-size: 2.8em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: transparent;
+  color: #232B64;
+  width: 100%;
+  font-weight: normal;
+  text-transform: none;
+  line-height: normal;
+}
+
+h2 {
+  margin: 20px 0 0 0;
+  padding: 0;
+  font-weight: normal;
+  border: 0;
+  background-color: transparent;
+  color: #666;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2.4em;
+}
+
+h3 {
+  color: #6C8799;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6em;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
+h4 {
+  margin: 20px 0 0 0;
+  padding: 0;
+  font-size: 1.5em;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #D69E0C;
+}
+
+.menuheading  {
+  margin: 0px 0px 0px 0px;
+  font-size: 1em;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 1.3em;
+  font-weight: normal;
+  color: #333333;
+  padding: 0px 0px;
+  text-align: left;
+  line-height: 1.6em;
+  margin: 1em 0;
+}
+hr {
+  border: 0px;
+  color: #ccc;
+  background-color: #ccc;
+  height: 2px;
+}
+
+ol li, ul li{
+    font-size:11px;
+  line-height: 14px;
+}
+
+.ep_required {
+}
+
+.ep_toggle a, a.ep_toggle {
+  text-decoration: none;
+  color: #44c;
+}
+
+th.ep_row {
+  border-bottom: dotted #b3a791 1px;
+  padding-right: 0.25em;
+  text-align: right;
+  width: 20%;
+}
+td.ep_row {
+  border-left: dotted #b3a791 1px;
+  border-bottom: dotted #b3a791 1px;
+  padding-left: 0.25em;
+  text-align: left;
+}
+
+.ep_highlight {
+  padding: 0.5em;
+  border: solid 2px #ff8888;
+  background-color: #ffeeee;
+}
+
+.ep_block {
+  width: auto;
+  margin: 0.25em auto 0.25em auto;
+  text-align: center;
+}
+.ep_block td {
+  text-align: left;
+}
+
+.ep_doc_icon
+{
+  padding: 2px;
+}
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/icontable.css */
+
+
+table.ep_icontable {
+  border-collapse: collapse;
+}
+table.ep_icontable th {
+  border: solid 1px #999;
+  background-color: #fff;
+  text-align: center;
+}
+table.ep_icontable td {
+  padding-left: 4px;
+  border: solid 1px #999;
+}
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/items.css */
+
+
+/* Items Screen */
+
+.ep_items_filters {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.ep_items_filters img {
+  border-width: 0px;
+  margin-left: 10px;
+  vertical-align: -2px;
+}
+
+.ep_items_filters a {
+  color: #000000;
+  text-decoration: none;
+}
+
+
+td.ep_columns_cell_inbox {
+  background-color: #ffc;
+  border-left: 1px dashed #ccc;
+  border-bottom: 1px solid #888;
+}
+td.ep_columns_cell_buffer {
+  background-color: #dde;
+  border-left: 1px dashed #ccc;
+  border-bottom: 1px solid #888;
+}
+td.ep_columns_cell_archive {
+  background-color: #cfc;
+  border-left: 1px dashed #ccc;
+  border-bottom: 1px solid #888;
+}
+td.ep_columns_cell_deletion {
+  background-color: #ccc;
+  border-left: 1px dashed #ccc;
+  border-bottom: 1px solid #888;
+}
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/latest.css */
+
+
+/* latest and latest tool */
+
+div.ep_latest_result {
+  font-size:1.1em;
+  line-height: 16px;
+  margin:10px 0px;
+}
+
+div.ep_latest_tool_result {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/mail.css */
+
+
+
+.ep_mail_view {
+  border: dashed 2px #ccc;
+  margin-top: 20px;
+  background-color: #eee;
+}
+
+.ep_mail_header {
+  margin: 4px;
+  padding: 2px;
+  font-family: monospace;
+}
+
+.ep_mail_body {
+  margin: 4px;
+  padding: 2px;
+}
+
+.ep_mail_body textarea {
+  background-color: #ccc;
+  border: solid #888 1px;
+}
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/messages.css */
+
+
+/* Message styles - used to provide alerts and errors */
+
+.ep_msg_message, .ep_msg_warning, .ep_msg_error {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.ep_msg_message_icon, .ep_msg_warning_icon, .ep_msg_error_icon {
+  padding: 10px;
+}
+/*
+
+Not currently using titles
+
+.ep_msg_message_title {
+  color: #70cf70;
+  padding: 2px 10px 2px 10px;
+}
+.ep_msg_error_title {
+  color: #ff8080;
+  padding: 2px 10px 2px 10px;
+}
+.ep_msg_warning_title {
+  color: #cf9070;
+  padding: 2px 10px 2px 10px;
+}
+
+*/
+
+.ep_msg_message_content {
+  background-image: none; /*url(images/green_back.png);*/
+  background-color: #c0ffc0;
+  border: solid 1px #80ff80;
+}
+
+.ep_msg_error_content {
+  background-image: none; /*url(images/red_back.png);*/
+  background-color: #ffe0e0;
+  border: solid 1px #ffc0c0;
+}
+
+.ep_msg_warning_content {
+  background-image: none; /*url(images/orange_back.png);*/
+  background-color: #FCE0B1;
+  border: solid 1px #ffc080;
+  
+}
+
+pre {
+  color: #000;
+}
+
+
+/* From: /opt/eprints3/lib/static/style/auto/multi.css */
+
+
+
+/*
+   Styles for the multi-field component.
+
+   ep_multi_*
+
+*/
+
+table.ep_multi
+{
+  width: 95%; !important
+}
+
+tr.ep_first th.ep_multi_heading,
+tr.ep_first td.ep_multi_input,
+tr.ep_first td.ep_multi_help
+{
+  border-top: none;
+}
+
+th.ep_multi_heading
+{
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 0.5em;
+  text-align: right;
+  border-top-width: 1px;
+  border-top-style: dotted;
+  border-top-color: #CCC;
+}
+
+td.ep_multi_input
+{
+  border-top: dotted #b3a791 1px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-left: dotted #b3a791 1px;
+}
+
+td.ep_multi_help
+{
+  white-space: nowrap;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  vertical-align: top;
+  text-align: right;
+  border-top-width: 1px;
+  border-top-style: dotted;
+  border-top-color: #CCC;
+}
+
+/* help bits */
+
+.ep_multi_inline_help
+{
+  padding-bottom: 0.5em;
+}
+  
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/preview.css */
+
+
+/*
+   Styles for the file preview popup.
+
+   ep_preview_*
+
+*/
+
+
+.ep_preview
+{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;  
+}
+
+.ep_preview table
+{
+  border: solid 1px black;
+  background-color: white;
+  padding: 4px;
+  margin: auto;
+}
+
+.ep_preview_title
+{
+  padding-top: 3px;
+  text-align: center;
+}
+
+
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/savedsearches.css */
+
+
+
+table.ep_savedsearches {
+  margin: 10px auto 10px auto;
+}
+
+table.ep_savedsearches th {
+  border-bottom: 1px solid #ccc;
+}
+table.ep_savedsearches td {
+  border-bottom: 1px solid #ccc;
+}
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/search.css */
+
+
+/* EPrints 3 search form style */
+
+
+
+/* buttons are on the form, controls on the results */
+
+
+.ep_search_buttons, .ep_search_controls, .ep_search_controls_bottom {
+  border-top: 0px;
+  border-bottom: 0px;
+  text-align: center;
+  background-image: none; /*url(images/toolbox.png) repeat-x;*/
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-bottom: 0.25em;
+  margin-top: 0.25em;
+  background-color: #eee;
+}
+.ep_search_fields {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.ep_search_fields th {
+  padding: 4px;
+}
+  
+.ep_search_fields td {
+  padding: 4px;
+}
+  
+
+.ep_search_control
+{
+  padding: 0px 4px 0px 4px;
+}
+
+.ep_search_export {
+  margin: 0.25em auto 0.25em auto;
+  text-align: center;
+}
+
+.ep_search_reorder {
+  margin: 0.4em auto 0 auto;
+  text-align: center;
+}
+
+.ep_search_tool {
+  white-space: nowrap;
+}
+.ep_search_tool img {
+  vertical-align: -2px;
+  padding-left: 0.5em;
+}
+
+.ep_search_feed {
+  white-space: nowrap;
+}
+.ep_search_feed img {
+  vertical-align: -2px;
+  padding-left: 0.5em;
+}
+.ep_search_feed a {
+  text-decoration: none;
+  color: #888;
+}
+
+.ep_search_results
+{
+  margin: 1em 0 1em 0;
+  background-color: #eee;
+}
+
+.ep_search_desc
+{
+  text-align: center;
+  margin: 0.25em 0 0 0;
+}
+
+.ep_search_result td
+{
+  padding: 4px;
+  border-bottom-width: 1px;
+  border-bottom-style: dotted;
+  border-bottom-color: #66769F;
+}
+
+.ep_paginate_list
+{
+  margin: auto;
+  display: table;
+}
+
+.ep_search_field_name
+{
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/subjectinput.css */
+
+
+/*
+   Styles for the subject component.
+
+   ep_subjectinput_*
+
+*/
+
+.ep_subjectinput_toggle {
+  text-decoration: none;
+  color: #000000;
+}
+
+.ep_subjectinput_selections {
+  margin: 0.5em auto 0.5em auto;
+  margin-top: 0.5em;
+  padding: 0.5em;
+}
+
+.ep_subjectinput_selected {
+  font-weight: bold;
+}
+
+.ep_subjectinput_selected_subject {
+  font-weight: bold;
+}
+
+ul.ep_subjectinput_subjects {
+  list-style: none;
+}
+ul.ep_subjectinput_subjects li {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  list-style: none;
+}
+ul.ep_subjectinput_subjects img {
+  vertical-align: -2px;
+}
+
+
+.ep_subjectinput_selections {
+  padding-bottom: 10px;
+  border-bottom: dashed #808080 1px;
+  margin-bottom: 10px;
+}
+.ep_subjectinput_selections td.ep_first {
+  border-top: none;
+}
+
+.ep_subjectinput_selections td {
+  border-top: dashed #ccc 1px;
+}
+
+.ep_subjectinput_results {
+  border: 1px dashed #ccc;
+  margin-top: 0.5em;
+  padding: 0.5em;
+  background-color: white;
+  list-style: none;
+}
+
+.ep_subjectinput_results td.ep_first {
+  border-top: none;
+}
+
+.ep_subjectinput_results td {
+  border-top: dashed #ccc 1px;
+}
+
+.ep_subjectinput_add_button, .ep_subjectinput_remove_button {
+  border: solid #dbd2ba 1px;
+  padding: 1px;
+  font-size: 1em;
+  color: #232B64;
+  background-color: #fffafa;
+}
+
+
+.ep_subjectinput_searchbar {
+  text-align: center;
+  width:960px;
+}
+
+/* End of subject component section */
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/summary.css */
+
+
+/* Item Summary */
+
+.ep_summary_content {
+}
+.ep_summary_content_top {
+}
+.ep_summary_content_bottom {
+}
+.ep_summary_content_left {
+  float: left;
+}
+.ep_summary_content_right {
+  float: right;
+}
+.ep_summary_content_after {
+  clear: both;
+}
+
+
+.ep_summary_content_left .ep_summary_box {
+  width: 200px;
+  margin-right: 10px;
+}
+.ep_summary_content_right .ep_summary_box {
+  width: 200px;
+  margin-left: 10px;
+}
+
+
+.ep_summary_box {
+  margin-bottom: 10px
+}
+.ep_summary_box_title {
+  background-image: none; /*url(images/toolbox_title.png);*/
+  font-weight: normal;
+  padding: 2px 6px 2px 6px;
+  border: solid 0px #fff;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+.ep_summary_box_body {
+  padding: 2px 6px 2px 6px;
+  border: 2px solid #dbd2ba;
+  background-color: #eee;
+}
+.ep_summary_box_title a {
+  text-decoration: none;
+}
+.ep_summary_box_title img
+{
+  vertical-align: -1px;
+}
+
+
+
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/surround.css */
+
+
+/* EPrints 3 default workflow component-surround style */
+
+/* ep_sr */
+
+.ep_sr_component {
+  padding: 0px;
+  background-color: transparent;
+  margin-top: 10px;
+}
+.ep_sr_component .ep_sr_title_bar {
+  background-image: none; /*url(images/toolbox_title.png);*/
+  padding: 2px 6px 2px 6px;
+  border-left: solid 1px #ccc;
+  border-top: solid 1px #ccc;
+  border-right: solid 1px #ccc;
+  background-color: #eee;
+}
+
+.ep_sr_component .ep_sr_title_bar table {
+}
+.ep_sr_component .ep_sr_title {
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #444;  
+}
+.ep_sr_component .ep_sr_content {
+  clear: both;
+  background: #eee;
+  background-image: none; /*url(images/toolbox_title.png);*/
+  border: solid 1px #ccc;
+  padding: 6px;
+}
+
+/* collapse bar */
+
+.ep_sr_collapse_bar {
+  background-image: none; /*url(images/toolbox_title.png);*/
+  padding: 2px 6px 2px 6px;
+  border: 1px solid #66769F;
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-top: 10px;
+}
+.ep_sr_collapse_bar a {
+  text-decoration: none;
+}
+.ep_sr_title a {
+  text-decoration: none;
+}
+.ep_sr_collapse_link img
+{
+  vertical-align: -1px;
+}
+
+.ep_sr_component .ep_sr_help {
+  margin-bottom: 8px;
+}
+.ep_sr_component .ep_sr_show_help {
+  white-space: nowrap;
+}
+.ep_sr_component .ep_sr_show_help a {
+  text-decoration: none;
+}  
+.ep_sr_component .ep_sr_hide_help {
+  white-space: nowrap;
+}
+.ep_sr_component .ep_sr_hide_help a {
+  text-decoration: none;
+}  
+.ep_sr_component .ep_sr_title_bar {
+}
+.ep_sr_show_help img {
+  vertical-align: -2px;
+}
+.ep_sr_hide_help img {
+  vertical-align: -2px;
+}
+
+
+.ep_sr_component .ep_sr_help_chunk {
+  border-bottom: 1px solid #888;
+  padding-bottom: 4px;
+  margin-bottom: 4px;
+}
+
+.ep_sr_component .ep_form_input_grid {
+  margin:auto;
+}
+.ep_multi_input .ep_form_input_grid {
+  margin-left: 0px;
+}
+
+/* From: /opt/eprints3/lib/static/style/auto/tabs.css */
+
+
+/* Tab Bar */
+
+table.ep_tab_bar {
+  margin-top: 10px;
+  width: 100%;
+}
+
+td.ep_tab {
+  background-color: #eee;
+  text-align: center;
+  border: solid #66769F 1px;
+  background-image: none;
+}
+td.ep_tab a {
+  display: block;
+  padding-bottom: 4px;
+  padding-top: 2px;
+  text-decoration: none;
+  color: #000000;
+}
+
+td.ep_tab_selected {
+  text-align: center;
+  background-color: #ffffff;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: #66769F;
+  border-right-color: #66769F;
+  border-bottom-color: #ffffff;
+  border-left-color: #66769F;
+}
+td.ep_tab_selected a {
+  text-decoration: none;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  color: #000000;
+}
+
+td.ep_tab_spacer {
+  width: 20px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #66769F;
+}
+
+.ep_tab_panel {
+  background-color: #FFF;
+  background-image: none; /*url(images/toolbox_title.png);*/
+  padding: 12px;
+  clear: both;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-right-color: #66769F;
+  border-bottom-color: #66769F;
+  border-left-color: #66769F;
+}
+
+table.ep_tab_bar a {
+  text-decoration: none;
+}
+
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/template.css */
+
+
+/* EPrints 3 template styles */
+/* prefix all styles with ep_tm */
+
+.ep_tm_logo img {
+  float: right;
+  padding-bottom: 4px;
+  border-style: none;
+}
+
+.ep_tm_archivetitle {
+  font: 0px Arial,Sans-serif;
+  color: #C18D02;
+  text-decoration: none;
+  margin: 0 auto;
+  width: 960px;
+  background-color: transparent;
+}
+
+.ep_tm_main {
+  margin: 0em 2em 2em 0em;
+}
+
+hr.ep_tm_last {
+  color: #240f78;
+  background-color: #FFF;
+}
+
+
+
+/* Menu Bar */
+
+ul.ep_tm_menu{
+  list-style: block;
+  margin: 0px;
+  padding: 10px 0px 0px 0px;
+  background-image: none;
+  margin:0px;
+  font-size: 1em;
+  font-weight: normal;
+  background: transparent;
+  background-image: none;
+}
+
+ul.ep_tm_menu li {
+  list-style: none;
+  display: block;
+  font-weight: normal;
+  padding: 5px 0px;
+  background-color: transparent;
+  border-top: dotted 1px #BCBEC0;
+  border-right: 0px;
+
+}
+ul.ep_tm_menu li a:visited {
+  text-decoration: none;
+  color: #66769F;
+  background-color: transparent;
+}
+ul.ep_tm_menu li a {
+  text-decoration: none;
+  color: #232B64;
+  background-color: transparent;
+  padding: 0 0 0 5px;
+}
+ul.ep_tm_menu li:hover {
+  background-color: #fff;
+  color: #D69E0C;
+}
+
+ul.ep_tm_menu li a:hover {
+  text-decoration: underline;
+  color: #D69E0C;
+  background-color: transparent;
+}
+
+
+/* end of menu bar */
+
+/* Search bar */
+
+.ep_tm_searchbar {
+  background-image: none;
+  margin: 0px auto;
+  width: 920px;
+  background-color: #E7E8E9;
+  color: #2F374C;
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+  padding: 10px 20px 5px 20px;
+}
+.ep_tm_searchbar a {
+  color: #232B64;
+  text-decoration: none;
+  text-transform: none;
+  font-weight: normal;
+  letter-spacing:0px;
+}
+
+.ep_tm_searchbar a:visited {
+  color: #039;
+  text-decoration: none;
+}
+
+.ep_tm_searchbar a:hover {
+  color: #D69E0C;
+  background-color: #EEE;
+  text-decoration: underline;
+}
+.ep_tm_searchbarbutton {
+  text-align: center;
+  background-image: none;
+  background-color: #232B64;
+  color: white;
+  font-weight: normal;
+  font-size: 1.6em;
+  padding: 2px 5px;
+  border: 0px;
+}
+.ep_tm_searchbarbox {
+  font-size: 1.2em;
+  padding: 5px;
+  border: #fff 1px solid;
+  color: #232B64;
+}
+
+/* end of search bar */
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/toolbox.css */
+
+
+/* Toolbox styles - used to subdivide some content */
+
+.ep_toolbox {
+  margin-bottom: 10px;
+}
+
+.ep_toolbox_title {
+  padding: 2px 10px 2px 10px;
+  color: #808080;
+}
+
+.ep_toolbox_content {
+  padding: 10px;
+  border: dotted 1px #eee;
+  background-color: #eee;
+  background-image: none;
+  background-repeat: repeat-x;
+}
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/upload.css */
+
+
+/*
+   Styles for the upload component.
+
+   ep_upload_*
+
+*/
+
+.ep_upload_newdoc
+{
+ text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.ep_upload_fields th
+{
+  text-align: right;
+}
+
+/* Document section */
+
+.ep_upload_doc
+{
+  margin-bottom: 0.5em;
+  background-image: none; /*url(images/toolbox_title.png);*/
+  background-color: #eee;
+}
+
+.ep_upload_doc .ep_upload_doc_title_bar {
+  padding: 0px 6px 0px 6px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-top-color: #ccc;
+  border-right-color: #ccc;
+  border-left-color: #ccc;
+}
+.ep_upload_doc .ep_upload_doc_title {
+  color: #444;
+}
+.ep_upload_doc .ep_upload_doc_content {
+  clear: both;
+  border: solid 1px #ccc;
+  padding: 6px;
+}
+
+.ep_update_doc_delete {
+  white-space: nowrap;
+}
+.ep_update_doc_delete input {
+  vertical-align: -2px;
+}
+
+.ep_update_doc_options {
+  white-space: nowrap;
+}
+.ep_update_doc_options img {
+  vertical-align: -2px;
+  border: none;
+}
+.ep_update_doc_options a {
+  text-decoration: none;
+}
+
+.ep_upload_doc_toolbar
+{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.ep_upload_files
+{
+  border: dashed #c8cbdf 1px;
+  text-align: center;
+  margin-top: 0.5em;
+  padding: 0.5em;
+  background-color: white;
+}
+
+.ep_upload_file_table
+{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5em;
+}
+.ep_upload_add_file_toolbar
+{
+  margin-top: 0.5em;
+}
+
+/* End of Document section */
+
+
+
+/* From: /opt/eprints3/lib/static/style/auto/view.css */
+
+
+
+.ep_view_page h2 {
+  margin-top: 3em;
+  border-bottom: solid 1px #808080;
+}
+
+.ep_view_timestamp {
+  margin-top: 3em;
+  text-align: right;
+}
+
+.ep_view_subjects {
+  padding: 10px;
+  background-image: none; /*url(images/toolbox_title.png);*/
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  background-color: #eee;
+}
+
+.ep_view_blurb {
+  margin-top: 20px;
+}
+
+.ep_view_group_by_current {
+  font-weight: bold;
+}
+
+.ep_view_group_by {
+  text-align: center;
+  background-image: none; /*url(images/toolbox_title.png);*/
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-bottom: 0.75em;
+  margin-top: 0.25em;
+  background-color: #eee;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: #CCC;
+  border-bottom-color: #CCC;
+}
+
+.ep_view_cols {
+  width: 100%;
+  margin-top: 1em;
+}
+
+.ep_view_cols_2 td { width: 50%; }
+.ep_view_cols_3 td { width: 33.3%; }
+.ep_view_cols_4 td { width: 25%; }
+.ep_view_cols_5 td { width: 20%; }
+.ep_view_cols_6 td { width: 16.6%; }
+.ep_view_cols_7 td { width: 14.28%; }
+.ep_view_cols_8 td { width: 12.5%; }
+
+.ep_view_cols ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.ep_tm_header{
+  background-color: transparent;
+  margin-top: 30px;
+}
+#main_content {
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px 0 50px 0;
+  height: auto;
+  min-height: 400px;
+  background-color: #FFF;
+}
+a {
+  text-decoration: underline;
+  color: #009;
+}
+a:visited {
+  text-decoration: underline;
+  color: #66769F;
+}
+a:hover {
+  text-decoration: underline;
+  color: #D69E0C;
+}
+
+#main_pageinfo {
+  width: 740px;
+  float: right;
+  margin: 0px;
+}
+#clear {
+  clear:both;
+  margin:0;
+  padding:0
+}
+#search_box{
+  margin: 30px 0 30px 30px;
+}
+#search_form{
+  float: left;
+}
+#sidelinks{
+  margin:0;
+  padding:0 0 0 10px;
+  font-size:0.9em;
+  text-align:left;
+  float: left;
+}
+
+#sidelinks ul{
+list-style-type:none;
+margin:0;
+padding:0;
+}
+
+
+html {
+  padding:0px;
+  margin:0px;
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+}
+
+body {
+  padding:0;
+  margin:0;
+  color: #000;
+  background-image: url(http://aei.pitt.edu/images/aei_bg.gif);
+  background-repeat: repeat;
+  background-color: transparent;   
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 62.5%;
+}
+
+
+#wrapper{
+  width: 960px;
+  margin: 0 auto;
+  border: solid 0px #000;
+}
+
+#footer {
+  margin: 0 auto 50px auto;
+  padding: 0px;
+  color: #000;
+  width:960px;
+  background: transparent;
+  /*position:absolute;
+  bottom:0;*/
+}
+#footer a img {
+  border: 0px none;
+  text-decoration:none;
+  margin:0;
+  padding:0;
+}
+#footer p {
+  font-size: 1em;
+  font-weight: normal;
+  color: #333333;
+  padding: 0px;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+#footer a {
+  color:#232B64;
+  text-decoration: underline;
+  
+}
+
+#footer a:hover {
+  color: #D69E0C;
+  text-decoration: underline;
+}
+.ep_tm_footer {
+  clear: both;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #fff;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #CCC;
+}
+.footer_sections {
+  width: 200px;
+  float: left;
+  margin: 15px 30px 0 0;
+  border-right: dotted 1px #ccc;
+  padding: 0 15px 0 0;
+  height: 180px;
+}
+
+.footer_sectionsR {
+  width: 200px;
+  float: left;
+  margin: 15px 0 0 0;
+  padding: 0;
+  height: 180px;
+}
+.footer_sectionsL {
+  width: 200px;
+  float: left;
+  margin: 15px 30px 0 0;
+  border-right: dotted 1px #ccc;
+  padding: 0 15px 0 20px;
+  height: 180px
+}
+
+#footer .footer_sectionsR a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #444;
+}
+ 
+#side_navi{
+  list-style: block;
+  margin: 0px;
+  padding: 0px 0px 0px 20px;
+  background-image: none;
+  margin:0px;
+  width: 180px;
+  float: left;
+  font-size: 1.2em;
+  font-weight: normal;
+  background-color: transparent;
+  }
+#side_navi_bottom{
+  height:50px;
+  background-image: url(http://aei.pitt.edu/images/navi_banner_btm.gif);
+  background-repeat: no-repeat;
+}
+.navi_section {
+  background-color: #E7E8E9;
+  padding: 10px;
+  margin: 0px;
+}
+
+.ep_config_viewfile {
+  font-size: 1.6em;
+  color: #666;
+  width: 500px;
+}
+.ep_icontable {
+  background-color: #FFF;
+}
+.ep_act_list_desc {
+      font-size: 1.2em;
+}
+.ep_tm_archivetitle a img {
+  border: 0px none;
+  text-decoration:none;
+}
+a img {
+    border: 0px none;
+    text-decoration:none;
+}
+th.ep_title_row {
+  border: solid 1px #66769F;
+  padding: 0.1em 0.5em 0.1em 0.5em;
+  font-size: 1.3em;
+  height: 2em;
+  background-image: none;
+  background-color: #eee;
+  color: #232B64;
+  font-weight: normal;
+  text-align: left;
+}
+.ep_phraseedit_widget, #ep_phraseedit_table textarea {
+  font-family: monospace;
+  font-size: 9pt;
+  width: 98%;
+  display: block;
+  background-color: white;
+  border: 1px solid #66769F;
+  padding: 3px;
+}
+#ep_phraseedit_table tr {
+  /*    background-color: #ccf; */
+    border-bottom: dotted 1px #66769F;
+}
+.ep_view_intro {
+  font-size: 12px;
+  line-height: 1.6em;
+  margin:5px 0px;
+  font-weight: normal;
+}
+.ep_view_menu ul {
+  font-size: 14px;
+  line-height: 1.3em;
+  margin:5px 0px;
+}
+
+.ep_summary_content_main table {
+  font-size: 12px;
+}
+
+.ep_tm_main ul li, .ep_view_menu ul li, .ep_view_menu ol li {
+  font-size: 12px;
+  line-height: 1.3em;
+  font-weight: normal;
+}
+
+.ep_tm_main ul li ul li, .ep_view_menu ul li ul li, .ep_tm_main ul li ol li, .ep_tm_main ol li ul li {
+  font-size: 1.2em;
+  font-weight: normal;
+  letter-spacing: 0px;
+  text-transform: none;
+}
+.ep_tm_main ul li ul li ul li, .ep_view_menu ul li ul li ul li {
+  font-size: 12px;
+  letter-spacing: 0px;
+  text-transform: none;
+} 
+.ep_tm_main ul li ul li ul li ul li, .ep_view_menu ul li ul li ul li ul li {
+  font-size: 12px;
+  letter-spacing: 0px;
+  text-transform: none;
+}
+.ep_tm_main ul li ul li ul li ul li ul li, .ep_view_menu ul li ul li ul li ul li ul li {
+  font-size: 12px;
+  letter-spacing: 0px;
+  text-transform: none;
+}
+#pittwrapper {
+  width: 100%;
+  background-color:#FFF;
+  -webkit-box-shadow: 0px 0px 30px #000000;
+  -moz-box-shadow: 0px 0px 30px #000000;
+  box-shadow: 0px 0px 30px #000000;
+  height: 50px;
+}
+#pittbar {
+  width: 960px;
+  height:50px;
+  margin:0 auto;
+}
+#pittright {
+  float:right;
+}
+#pittleft{
+  float:left;
+}
+img a{
+  text-decoration:none;
+}
+#c12_series {
+  overflow: visible;
+  width: 620px;
+  font-size:9px;
+}
+#c12_content_inner {
+  width: 700px;
+}
+
+/* homepage btn */
+
+.graphic-btn {
+    margin: 10px 20px 10px 0px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 210px;
+}
+
+.graphic-btn:hover {
+    border: 1px solid #777;
+    opacity: .3;
+}
+
+
+.graphic-btn img {
+    width: 100%;
+    height: auto;
+}
+
+p.desc {
+    text-align: center;
+    height: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}

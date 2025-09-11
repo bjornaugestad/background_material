@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: http://aei.pitt.edu/sitemap.xml
+Disallow: /cgi/
